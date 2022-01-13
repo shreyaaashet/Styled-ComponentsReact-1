@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Herosection from "./components/Herosection";
+
 import Home from "./pages";
 
 
