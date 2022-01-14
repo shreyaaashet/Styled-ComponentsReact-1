@@ -8,7 +8,7 @@ const Navbar = ({handleToggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>Dalla</NavLogo>
+          <NavLogo to='/'>Dollar</NavLogo>
           <MobileIcons onClick={handleToggle}>
            <FaBars/>
           </MobileIcons>

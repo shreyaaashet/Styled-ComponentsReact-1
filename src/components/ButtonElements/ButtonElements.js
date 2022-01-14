@@ -8,6 +8,7 @@ background:${({primary})=>(primary ? '#01BF71' : '#010606')};
 white-space:nowrap;
 padding:${({big})=>(big ? '14px 48px' : '12px 30px')};
 color:${({dark})=>(dark ? '#010606' : '#fff')};
+font-size: large;
 outline:none;
 border:none;
 cursor:pointer;

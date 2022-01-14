@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import  Herosection  from '../components/Herosection'
+import Infosection from '../components/Infosection'
+import { aboutObj } from '../components/Infosection/Data'
 
 
 const Home = () => {
@@ -20,6 +22,7 @@ const handleHover=()=>{
       <Sidebar handleToggle={handleToggle} isOpen={isOpen} setIsOpen={setIsOpen} />
       <Navbar handleToggle={handleToggle} isOpen={isOpen} setIsOpen={setIsOpen} />
       <Herosection handleHover={handleHover} hover={hover} setHover={setHover}/>
+      <Infosection {...aboutObj} />
       </>
     )
 }
