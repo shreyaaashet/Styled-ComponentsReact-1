@@ -4,9 +4,14 @@ import Navbar from '../components/Navbar'
 import  Herosection  from '../components/Herosection'
 import Infosection from '../components/Infosection'
 import { aboutObj } from '../components/Infosection/Data'
+import { discoverObj } from '../components/Infosection/Data'
+
+import { serviceItem } from '../components/Services/Data'
+import Services from '../components/Services'
 
 
 const Home = () => {
+// const[serviceData, setServiceData]= useState( serviceItem );
 
 const [isOpen, setIsOpen] = useState(false);
 const [hover,setHover]= useState(false);
@@ -23,6 +28,10 @@ const handleHover=()=>{
       <Navbar handleToggle={handleToggle} isOpen={isOpen} setIsOpen={setIsOpen} />
       <Herosection handleHover={handleHover} hover={hover} setHover={setHover}/>
       <Infosection {...aboutObj} />
+      <Infosection {...discoverObj} />
+      <Services serviceItem={serviceItem}/>
+
+
       </>
     )
 }
