@@ -3,11 +3,12 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import  Herosection  from '../components/Herosection'
 import Infosection from '../components/Infosection'
-import { aboutObj } from '../components/Infosection/Data'
+import { aboutObj, signUpObj } from '../components/Infosection/Data'
 import { discoverObj } from '../components/Infosection/Data'
 
 import { serviceItem } from '../components/Services/Data'
 import Services from '../components/Services'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -30,7 +31,8 @@ const handleHover=()=>{
       <Infosection {...aboutObj} />
       <Infosection {...discoverObj} />
       <Services serviceItem={serviceItem}/>
-
+      <Infosection {...signUpObj} />
+      <Footer/>
 
       </>
     )

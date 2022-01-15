@@ -13,7 +13,7 @@ import {
 const Services = ({ serviceItem }) => {
   return (
     <>
-      <ServiceContainer id='service'>
+      <ServiceContainer id='services'>
         <ServiceH1>Our Services</ServiceH1>
         <ServiceWrapper>
           { serviceItem[0] && serviceItem.map((serviceBox) => {
@@ -26,12 +26,7 @@ const Services = ({ serviceItem }) => {
               </ServiceCard>
             );
           })}
-          {/* <ServiceCard>
-                    
-                    <ServiceIcon src={serviceItem.img} alt={serviceItem.alt} />
-                    <ServiceH2>{serviceItem.serviceH2}</ServiceH2>
-                     <ServiceP>{serviceItem.serviceP}</ServiceP>
-                </ServiceCard> */}
+         
         </ServiceWrapper>
       </ServiceContainer>
     </>
